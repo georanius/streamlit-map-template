@@ -2,8 +2,7 @@ import streamlit as st
 import leafmap.foliumap as leafmap
 
 markdown = """
-A Streamlit map template
-<https://github.com/opengeos/streamlit-map-template>
+<https://github.com/georanius/streamlit-map-template/edit/main/pages/1_%F0%9F%8C%8D_Interactive_Map.py>
 """
 
 st.sidebar.title("About")
