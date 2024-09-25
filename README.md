@@ -1,6 +1,6 @@
 
 
-Web App URL: <[https://map-template.streamlit.app](https://goerans-map-app.streamlit.app/)>
+Web App URL: https://goerans-map-app.streamlit.app/
 
 ## Instructions
 want to do your own?
