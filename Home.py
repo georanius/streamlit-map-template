@@ -16,7 +16,7 @@ logo = "https://i.imgur.com/lWpD7ka.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Open)upyter Webpage")
+st.title("Bisous bon bullot")
 
 st.markdown(
     """
