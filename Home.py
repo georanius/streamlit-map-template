@@ -5,25 +5,25 @@ st.set_page_config(layout="wide")
 
 # Customize the sidebar
 markdown = """
-Demonstration of various interactive web apps
-Change the code of the side here: <https://github.com/georanius/streamlit-map-template?tab=readme-ov-file>
-Or fork it and create your own web-app.
-Or you start like i did with forking (https://github.com/opengeos/streamlit-map-template).
+Change the code of the side here: <https://github.com/georanius/streamlit-map-template?tab=readme-ov-file>, and ask for a merge request.
+Or fork it, and create your own web-app.
+Or you start like, I did with forking (https://github.com/opengeos/streamlit-map-template).
 """
 
-st.sidebar.title("About doing coding in Geosciences")
+st.sidebar.title("Doing coding in Geosciences")
 st.sidebar.info(markdown)
 logo = "https://i.imgur.com/lWpD7ka.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Recipe: Webpage")
+st.title("Open)upyter Webpage")
 
 st.markdown(
     """
     Ingredients:
-    A template,
+    The python parcels,
     [streamlit](https://streamlit.io) and [leafmap](https://leafmap.org).
+    used by the template
     It is an open-source project and you are very welcome to contribute to the [GitHub repository](https://github.com/opengeos/streamlit-map-template).
     """
 )
