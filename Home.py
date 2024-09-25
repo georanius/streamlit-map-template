@@ -13,7 +13,7 @@ Or you start like i did with forking (https://github.com/opengeos/streamlit-map-
 
 st.sidebar.title("About doing coding in Geosciences")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAA.png"
+logo = "https://i.imgur.com/lWpD7ka.png"
 st.sidebar.image(logo)
 
 # Customize page title
