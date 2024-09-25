@@ -20,8 +20,7 @@ st.title("Bisous, bon bullot")
 
 st.markdown(
     """
-every web-app is a good app 
- [GitHub repository](https://github.com/opengeos/streamlit-map-template).
+every web-app is a good app
     """
 )
 
