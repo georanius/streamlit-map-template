@@ -5,20 +5,24 @@ st.set_page_config(layout="wide")
 
 # Customize the sidebar
 markdown = """
-Georans <https://github.com/georanius>
+Demonstration of various interactive web apps
+Change the code of the side here: <https://github.com/georanius/streamlit-map-template?tab=readme-ov-file>
+Or fork it and create your own web-app.
+Or you start like i did with forking (https://github.com/opengeos/streamlit-map-template).
 """
 
-st.sidebar.title("About")
+st.sidebar.title("About doing coding in Geosciences")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAU.png"
+logo = "https://i.imgur.com/UbOXYAA.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Easy Webpage")
+st.title("Recipe: Webpage")
 
 st.markdown(
     """
-    This multipage app template demonstrates various interactive web apps created using
+    Ingredients:
+    A template,
     [streamlit](https://streamlit.io) and [leafmap](https://leafmap.org).
     It is an open-source project and you are very welcome to contribute to the [GitHub repository](https://github.com/opengeos/streamlit-map-template).
     """
