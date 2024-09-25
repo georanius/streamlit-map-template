@@ -36,6 +36,16 @@ m.to_streamlit(height=500)
 
 st.header("Was made from:")
 
+st.markdown(
+    """
+    Ingredients:
+    The python parcels,
+    [streamlit](https://streamlit.io) and [leafmap](https://leafmap.org).
+    used by the template
+    It is an open-source project and you are very welcome to contribute to the [GitHub repository](https://github.com/opengeos/streamlit-map-template).
+    """
+)
+
 #markdown = """
 #1. For the [GitHub repository](https://github.com/opengeos/streamlit-map-template) or [use it as a template](https://github.com/opengeos/streamlit-map-template/generate) for your own project.
 #2. Customize the sidebar by changing the sidebar text and logo in each Python files.
