@@ -25,6 +25,12 @@ st.markdown(
     """
 )
 
+
+
+m = leafmap.Map(minimap_control=True)
+m.add_basemap("OpenTopoMap")
+m.to_streamlit(height=500)
+
 st.header("Instructions")
 
 markdown = """
@@ -36,7 +42,3 @@ markdown = """
 """
 
 st.markdown(markdown)
-
-m = leafmap.Map(minimap_control=True)
-m.add_basemap("OpenTopoMap")
-m.to_streamlit(height=500)
