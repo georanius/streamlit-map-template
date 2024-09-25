@@ -5,8 +5,7 @@ st.set_page_config(layout="wide")
 
 # Customize the sidebar
 markdown = """
-Georans 
-<https://github.com/georanius>
+Georans <https://github.com/georanius>
 """
 
 st.sidebar.title("About")
@@ -31,7 +30,7 @@ m = leafmap.Map(minimap_control=True)
 m.add_basemap("OpenTopoMap")
 m.to_streamlit(height=500)
 
-st.header("Instructions")
+st.header("Page was made from:")
 
 markdown = """
 1. For the [GitHub repository](https://github.com/opengeos/streamlit-map-template) or [use it as a template](https://github.com/opengeos/streamlit-map-template/generate) for your own project.
