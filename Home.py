@@ -16,15 +16,12 @@ logo = "https://i.imgur.com/lWpD7ka.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Bisous bon bullot")
+st.title("Bisous, bon bullot")
 
 st.markdown(
     """
-    Ingredients:
-    The python parcels,
-    [streamlit](https://streamlit.io) and [leafmap](https://leafmap.org).
-    used by the template
-    It is an open-source project and you are very welcome to contribute to the [GitHub repository](https://github.com/opengeos/streamlit-map-template).
+every web-app is a good app 
+ [GitHub repository](https://github.com/opengeos/streamlit-map-template).
     """
 )
 
