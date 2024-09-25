@@ -5,7 +5,7 @@ st.set_page_config(layout="wide")
 
 # Customize the sidebar
 markdown = """
-A Streamlit map template
+Georans Streamlit mapping side
 <https://github.com/opengeos/streamlit-map-template>
 """
 
