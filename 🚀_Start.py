@@ -16,7 +16,7 @@ logo = "https://i.imgur.com/lWpD7ka.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Bisous, Val")
+st.title("Welcome")
 
 st.markdown(
     """
