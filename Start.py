@@ -10,21 +10,19 @@ Or fork it, and create your own web-app.
 Or you start like, I did with forking (https://github.com/opengeos/streamlit-map-template).
 """
 
-st.sidebar.title("Doing coding in Geosciences")
+st.sidebar.title("Georans side")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/lWpD7ka.png"
+logo = "https://i.imgur.com/lWpDka.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Welcome")
+st.title("Moin")
 
 st.markdown(
     """
 every web-app is a good app
     """
 )
-
-
 
 m = leafmap.Map(minimap_control=True)
 m.add_basemap("OpenTopoMap")
