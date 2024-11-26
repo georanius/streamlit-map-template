@@ -1,41 +1,50 @@
 import streamlit as st
+import leafmap.foliumap as leafmap
 
+st.set_page_config(layout="wide")
 
-# --- PAGE SETUP ---
-about_page = st.Page(
-    "views/about_me.py",
-    title="About Me",
-    icon=":material/account_circle:",
-    default=True,
-)
-project_1_page = st.Page(
-    "views/sales_dashboard.py",
-    title="Sales Dashboard",
-    icon=":material/bar_chart:",
-)
-project_2_page = st.Page(
-    "views/chatbot.py",
-    title="Chat Bot",
-    icon=":material/smart_toy:",
-)
+# Customize the sidebar
+markdown = """
+Change the code of the side here: <https://github.com/georanius/streamlit-map-template?tab=readme-ov-file>, and ask for a merge request.
+Or fork it, and create your own web-app.
+Or you start like, I did with forking (https://github.com/opengeos/streamlit-map-template).
+"""
 
+st.sidebar.title("Georans side")
+st.sidebar.info(markdown)
+logo = "https://i.imgur.com/lWpDka.png"
+st.sidebar.image(logo)
 
-# --- NAVIGATION SETUP [WITHOUT SECTIONS] ---
-# pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
+# Customize page title
+st.title("Moin")
 
-# --- NAVIGATION SETUP [WITH SECTIONS]---
-pg = st.navigation(
-    {
-        "Info": [about_page],
-        "Projects": [project_1_page, project_2_page],
-    }
+st.markdown(
+    """
+every web-app is a good app
+    """
 )
 
+m = leafmap.Map(minimap_control=True)
+m.add_basemap("OpenTopoMap")
+m.to_streamlit(height=500)
 
-# --- SHARED ON ALL PAGES ---
-st.logo("assets/codingisfun_logo.png")
-st.sidebar.markdown("Made with ❤️ by [Sven](https://youtube.com/@codingisfun)")
+st.header("Was made from:")
 
+st.markdown(
+    """
+    Ingredients:
+    The python parcels,
+    [streamlit](https://streamlit.io) and [leafmap](https://leafmap.org).
+    used by the template
+    It is an open-source project and you are very welcome to contribute to the [GitHub repository](https://github.com/opengeos/streamlit-map-template).
+    """
+)
 
-# --- RUN NAVIGATION ---
-pg.run()
+#markdown = """
+#1. For the [GitHub repository](https://github.com/opengeos/streamlit-map-template) or [use it as a template](https://github.com/opengeos/streamlit-map-template/generate) for your own project.
+#2. Customize the sidebar by changing the sidebar text and logo in each Python files.
+#3. Find your favorite emoji from https://emojipedia.org.
+#4. Add a new app to the `pages/` directory with an emoji in the file name, e.g., `1_🚀_Chart.py`.
+#"""
+
+st.markdown(markdown)
